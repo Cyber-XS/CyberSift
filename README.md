@@ -46,7 +46,7 @@ Install Requirments for Arch Based Distros
 
 Run CyberSift
 
-    ./cybersift <domain name>
+    ./cybersift <domain_name>
 
 
 
