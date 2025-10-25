@@ -5,17 +5,17 @@ It intelligently integrates multiple industry-standard tools into a single strea
 
 ## ⚙️ Features
 
-### 🔍 Subdomain Enumeration — Uses subfinder, amass, and sublist3r for exhaustive subdomain discovery.
+🔍 **Subdomain Enumeration** — Uses subfinder, amass, and sublist3r for exhaustive subdomain discovery.
 
-### 🌐 Port & Service Scanning — Leverages nmap for deep network insights and service detection.
+🌐 **Port & Service Scanning** — Leverages nmap for deep network insights and service detection.
 
-### 🗂️ Directory Bruteforcing — Employs dirb and ffuf to uncover hidden directories and endpoints.
+🗂️ **Directory Bruteforcing** — Employs dirb and ffuf to uncover hidden directories and endpoints.
 
-### 🧩 Vulnerability Scanning — Integrates nuclei for automated template-based vulnerability detection.
+🧩 **Vulnerability Scanning** — Integrates nuclei for automated template-based vulnerability detection.
 
-### ⚡ Customizable Automation — Modular structure lets you enable or disable tools as needed.
+⚡ **Customizable Automation** — Modular structure lets you enable or disable tools as needed.
 
-### 📊 Clean Output & Logging — Consolidated, well-formatted reports to simplify your analysis workflow.
+📊 **Clean Output & Logging** — Consolidated, well-formatted reports to simplify your analysis workflow.
 
 🚀 Why CyberSift?
 
