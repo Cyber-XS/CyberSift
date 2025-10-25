@@ -17,10 +17,10 @@ It intelligently integrates multiple industry-standard tools into a single strea
 
 📊 **Clean Output & Logging** — Consolidated, well-formatted reports to simplify your analysis workflow.
 
-🚀 Why CyberSift?
+## 🚀 Why CyberSift?
 
 No more juggling multiple recon tools or writing endless bash scripts — CyberSift sifts through data intelligently, automating the boring parts and letting you focus on what matters most — finding vulnerabilities.
 
-🧠 Tools Integrated
+## 🧠 Tools Integrated
 
 nmap, subfinder, amass, dirb, ffuf, nuclei, sublist3r, and more
