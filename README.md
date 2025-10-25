@@ -24,3 +24,30 @@ No more juggling multiple recon tools or writing endless bash scripts — CyberS
 ## 🧠 Tools Integrated
 
 nmap, subfinder, amass, dirb, ffuf, nuclei, sublist3r, and more
+
+
+**Follow the steps below to set up and run the CyberSift on your Linux machine:**
+
+1️⃣ Clone the Repository
+
+Open a terminal and run:
+
+    git clone https://github.com/Cyber-XS/CyberSift.git
+    cd CyberSift
+    chmod +x arch.sh debian.sh cybersift.sh
+
+Install Requirments for Debian Based Distros
+
+    ./debian.sh
+
+Install Requirments for Arch Based Distros
+
+    ./arch.sh
+
+Run CyberSift
+
+    ./cybersift <domain name>
+
+
+
+
