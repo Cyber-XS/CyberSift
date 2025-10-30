@@ -7,3 +7,4 @@ sudo pacman -S ffuf
 sudo pacman -S nuclei
 sudo pacman -S sublist3r
 sudo pacman -S nikto
+sudo pacman -S theharvester
