@@ -7,3 +7,4 @@ sudo apt install ffuf
 sudo apt install nuclei
 sudo apt install sublist3r
 sudo apt install nikto
+sudo apt install theharvester
