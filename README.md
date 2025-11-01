@@ -34,7 +34,7 @@ Open a terminal and run:
 
     git clone https://github.com/Cyber-XS/CyberSift.git
     cd CyberSift
-    chmod +x arch.sh debian.sh cybersift.sh
+    chmod +x arch.sh debian.sh cybersift.py
 
 Install Requirments for Debian Based Distros
 
