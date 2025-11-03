@@ -3,6 +3,10 @@
 CyberSift is a powerful, automated reconnaissance and vulnerability scanning tool designed for bug bounty hunters, penetration testers, and cybersecurity researchers.
 It intelligently integrates multiple industry-standard tools into a single streamlined workflow to make information gathering faster, smarter, and more efficient.
 
+## 📺 Video Guide for Setup
+
+[![Watch on YouTube](https://img.youtube.com/vi/MEhkPVpbDmI/maxresdefault.jpg)](https://www.youtube.com/watch?v=MEhkPVpbDmI)
+
 ## ⚙️ Features
 
 🔍 **Subdomain Enumeration** — Uses subfinder, amass, and sublist3r for exhaustive subdomain discovery.
