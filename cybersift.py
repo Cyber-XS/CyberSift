@@ -10,7 +10,7 @@ import time
 from urllib.request import urlopen, URLError
 
 class CyberSift:
-    VERSION = "1.9"
+    VERSION = "1.10"
 
     def __init__(self, target, output_dir="Recon_output", verbose=True):
         self.target = target.strip()
@@ -72,14 +72,14 @@ class CyberSift:
         self.log(f"Executing: {cmd}", level="DEBUG")
         try:
             if capture:
-                result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=600)
+                result = subprocess.run(cmd, shell=True, capture_output=True, text=True,)
                 if result.stderr and self.verbose:
                     for line in result.stderr.strip().splitlines():
                         if line.strip():
                             self.log(f"stderr: {line}", level="WARNING")
                 output = result.stdout.strip()
             else:
-                result = subprocess.run(cmd, shell=True, timeout=600)
+                result = subprocess.run(cmd, shell=True,)
                 output = ""
             if output_file and capture and output:
                 self.save_txt(output_file, output)
@@ -178,7 +178,7 @@ class CyberSift:
     def port_scanning(self):
         file = f"nmap_{self.base_name}.txt"
         path = os.path.join(self.output_dir, file)
-        self.run_command(f"nmap -sS {self.target} -oN {path}", capture=False)
+        self.run_command(f"nmap -sS {self.target} -p- -oN {path}", capture=False)
         if os.path.exists(path):
             with open(path) as f:
                 output = f.read().strip()
@@ -203,7 +203,7 @@ class CyberSift:
         # Amass
         file = f"amass_{self.base_name}.txt"
         path = os.path.join(self.output_dir, file)
-        self.run_command(f"amass enum -active -d {self.target} -o {path} -silent", capture=False)
+        self.run_command(f"amass enum -active -d {self.target} -o {path}", capture=False)
         if os.path.exists(path):
             with open(path) as f:
                 subs = [l.strip() for l in f if l.strip()]
