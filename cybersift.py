@@ -290,7 +290,7 @@ class CyberSift:
     def nikto_scan(self):
         file = f"nikto_{self.base_name}.txt"
         path = os.path.join(self.output_dir, file)
-        self.run_command(f"nikto -h http://{self.target} -output {path}", capture=False)
+        self.run_command(f"nikto -h http://{self.target} -Format txt -output {path}", capture=False)
         if os.path.exists(path):
             with open(path) as f:
                 issues = [l.strip() for l in f if l.strip().startswith("+ ")]
