@@ -1,7 +1,8 @@
 # 🕵️‍♂️ CyberSift — The All-in-One Reconnaissance Toolkit
 
-CyberSift is a powerful, automated reconnaissance and vulnerability scanning tool designed for bug bounty hunters, penetration testers, and cybersecurity researchers.
-It intelligently integrates multiple industry-standard tools into a single streamlined workflow to make information gathering faster, smarter, and more efficient.
+CyberSift is an automated reconnaissance and vulnerability scanning wrapper written in Python. It streamlines the security auditing process by integrating powerful industry tools into a single, easy-to-use terminal interface.
+
+**Great Power Comes with Great Responsibilities.**
 
 ## 📺 Video Guide for Setup
 
@@ -9,17 +10,17 @@ It intelligently integrates multiple industry-standard tools into a single strea
 
 ## ⚙️ Features
 
-🔍 **Subdomain Enumeration** — Uses subfinder, amass, and sublist3r for exhaustive subdomain discovery.
+🔍 **Host Discovery:** Local network scanning using arp-scan.
 
-🌐 **Port & Service Scanning** — Leverages nmap for deep network insights and service detection.
+🌐 **Host Fingerprinting:** Detailed service and OS detection via nmap.
 
-🗂️ **Directory Bruteforcing** — Employs dirb and ffuf to uncover hidden directories and endpoints.
+🗂️ **Subdomain Enumeration:** Passive and active subdomain discovery using subfinder.
 
-🧩 **Vulnerability Scanning** — Integrates nuclei for automated template-based vulnerability detection.
+🧩 **Information Gathering:** Deep OSINT and data mining with spiderfoot.
 
-⚡ **Customizable Automation** — Modular structure lets you enable or disable tools as needed.
+⚡ **Vulnerability Scanning:** Template-based vulnerability assessment using nuclei.
 
-📊 **Clean Output & Logging** — Consolidated, well-formatted reports to simplify your analysis workflow.
+📊 **Hacking AI:** Interactive LLM-based security assistance via ollama (Hivemind Heretic).
 
 ## 🚀 Why CyberSift?
 
@@ -38,19 +39,11 @@ Open a terminal and run:
 
     git clone https://github.com/Cyber-XS/CyberSift.git
     cd CyberSift
-    chmod +x arch.sh debian.sh cybersift.py
-
-Install Requirments for Debian Based Distros
-
-    ./debian.sh
-
-Install Requirments for Arch Based Distros
-
-    ./arch.sh
+    chmod +x cybersift.py
 
 Run CyberSift
 
-    ./cybersift <domain_name>
+    python cybersirf.py
 
 
 
