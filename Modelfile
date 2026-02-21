@@ -1,0 +1,14 @@
+# Point this to the actual path of the file you downloaded
+FROM ./Qwen3-8B-Hivemind-Inst-Hrtic-Ablit-Uncensored-Q8_0.gguf
+
+# Set the template (Qwen models typically use the ChatML or Qwen2 template)
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ .Response }}<|im_end|>"""
+
+# Set parameters (Optional)
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
