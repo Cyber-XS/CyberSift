@@ -74,7 +74,7 @@ def main_menu():
             time.sleep(1)
 
 def host_discovery():
-    print(B + "Host Discovery running =>> Arp-Scan" + W)
+    print(B + "Host Discovery running =⮞ Arp-Scan" + W)
     cmd = ["sudo", "arp-scan", "--localnet"]
 
     try:
@@ -97,9 +97,9 @@ def host_discovery():
         exit_code = process.wait()
 
         if exit_code == 0:
-            print("[✓] Scan finished successfully")
+            print(G + "[✓] Scan finished successfully" + W)
         else:
-            print(f"[!] Finished with exit code {exit_code}")
+            print(R + f"[!] Finished with exit code {exit_code}" + W)
 
 
     except FileNotFoundError:
@@ -114,7 +114,7 @@ def host_discovery():
     print(G + "=" * 100 + W)
 
 def host_fingerprinting():
-    print(B + "Host Fingerprinting running =>> Nmap" + W)
+    print(B + "Host Fingerprinting running =⮞ Nmap" + W)
     cmd = ["sudo", "nmap", input("Enter Host: "), "-sS", "-sV", "-p-", "-v", "-O"]
 
     try:
@@ -137,9 +137,9 @@ def host_fingerprinting():
         exit_code = process.wait()
 
         if exit_code == 0:
-            print("[✓] Scan finished successfully")
+            print(G + "[✓] Scan finished successfully" + W)
         else:
-            print(f"[!] Finished with exit code {exit_code}")
+            print(R + f"[!] Finished with exit code {exit_code}" + W)
 
 
     except FileNotFoundError:
@@ -154,7 +154,7 @@ def host_fingerprinting():
     print(G + "=" * 100 + W)
 
 def subdomain_enumeration():
-    print(B + "Subdomain Enumeration =>> Subfinder" + W)
+    print(B + "Subdomain Enumeration =⮞ Subfinder" + W)
     cmd = ["subfinder", "-d", input("Enter Host: "), "-all"]
 
     try:
@@ -177,9 +177,9 @@ def subdomain_enumeration():
         exit_code = process.wait()
 
         if exit_code == 0:
-            print("[✓] Scan finished successfully")
+            print(G + "[✓] Scan finished successfully" + W)
         else:
-            print(f"[!] Finished with exit code {exit_code}")
+            print(R + f"[!] Finished with exit code {exit_code}" + W)
 
 
     except FileNotFoundError:
@@ -194,7 +194,7 @@ def subdomain_enumeration():
     print(G + "=" * 100 + W)
 
 def information_gathering():
-    print(B + "Information Gathering =>> Spiderfoot" + W)
+    print(B + "Information Gathering =⮞ Spiderfoot" + W)
     cmd = ["spiderfoot", "-s", input("Enter Host : "), "-u", "all", "-max-threads", "100"]
 
     try:
@@ -217,9 +217,9 @@ def information_gathering():
         exit_code = process.wait()
 
         if exit_code == 0:
-            print("[✓] Scan finished successfully")
+            print(G + "[✓] Scan finished successfully" + W)
         else:
-            print(f"[!] Finished with exit code {exit_code}")
+            print(R + f"[!] Finished with exit code {exit_code}" + W)
 
 
     except FileNotFoundError:
@@ -234,7 +234,7 @@ def information_gathering():
     print(G + "=" * 100 + W)
 
 def vulnerability_scanning():
-    print(B + "Vulnerability Scanning =>> Nuclei" + W)
+    print(B + "Vulnerability Scanning =⮞ Nuclei" + W)
     cmd = ["nuclei", "-u", input("Enter Host : "), "-as", "-dast", "-headless", "-code", "-severity", "critical,high,medium"]
 
     try:
@@ -257,9 +257,9 @@ def vulnerability_scanning():
         exit_code = process.wait()
 
         if exit_code == 0:
-            print("[✓] Scan finished successfully")
+            print(G + "[✓] Scan finished successfully" + W)
         else:
-            print(f"[!] Finished with exit code {exit_code}")
+            print(R + f"[!] Finished with exit code {exit_code}" + W)
 
 
     except FileNotFoundError:
@@ -274,7 +274,7 @@ def vulnerability_scanning():
     print(G + "=" * 100 + W)
 
 def hacking_ai():
-    print(B + "Hacking AI =>> Hivemind Heretic" + W)
+    print(B + "Hacking AI =⮞ Hivemind Heretic" + W)
     print("Commands: Type '/bye' to return to menu")
     cmd = ["ollama", "run", "hivemind-heretic"]
 
@@ -287,6 +287,7 @@ def hacking_ai():
         print("    sudo dnf install curl          # Fedora")
         print("    sudo pacman -S curl            # Arch")
         print("    curl -fsSL https://ollama.com/install.sh | sh")
+        print('    curl -L -o Qwen3-8B-Hivemind-Inst-Hrtic-Ablit-Uncensored-Q8_0.gguf "https://huggingface.co/DavidAU/Qwen3-8B-Hivemind-Instruct-Heretic-Abliterated-Uncensored-NEO-Imatrix-GGUF/resolve/main/Qwen3-8B-Hivemind-Inst-Hrtic-Ablit-Uncensored-Q8_0.gguf?download=true"')
         print("    ollama create hivemind-heretic -f Modelfile")
 
     print(G + "=" * 100 + W)
