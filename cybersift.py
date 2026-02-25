@@ -235,7 +235,7 @@ def information_gathering():
 
 def vulnerability_scanning():
     print(B + "Vulnerability Scanning =⮞ Nuclei" + W)
-    cmd = ["nuclei", "-u", input("Enter Host : "), "-as", "-dast", "-headless", "-code", "-severity", "critical,high,medium"]
+    cmd = ["nuclei", "-u", input("Enter Host : "), "-dast", "-headless", "-code", "-severity", "critical,high,medium"]
 
     try:
         process = subprocess.Popen(
