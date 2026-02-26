@@ -43,7 +43,7 @@ Open a terminal and run:
 
 Run CyberSift
 
-    python cybersirf.py
+    python cybersift.py
 
 
 
