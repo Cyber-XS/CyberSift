@@ -6,7 +6,7 @@ CyberSift is an automated reconnaissance and vulnerability scanning wrapper writ
 
 ## 📺 Video Guide for Setup
 
-[![Watch on YouTube](https://img.youtube.com/vi/MEhkPVpbDmI/maxresdefault.jpg)](https://www.youtube.com/watch?v=MEhkPVpbDmI)
+[![Watch on YouTube](https://img.youtube.com/vi/_wv2SV7R8Z0/maxresdefault.jpg)](https://www.youtube.com/watch?v=_wv2SV7R8Z0)
 
 ## ⚙️ Features
 
