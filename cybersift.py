@@ -300,7 +300,7 @@ def auth_testing_menu():
         print("[0] Back")
         ch = prompt("Choose")
         if ch =="1": login_bruteforce()
-        elif ch =="2": return
+        elif ch =="0": return
         else: time.sleep(0.5)
     
 # WebApp Pentest Root Menu
