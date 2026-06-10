@@ -373,11 +373,35 @@ def hackai_menu():
     while True:
         print(P + "  [3] HackAI\n" + W)
         print("   🤖 [1] Hacking AI (Hivemind Heretic)")
+        print("   🧠 [2] Claude Code (Anthropic AI)")
         print("   🔙 [0] Back to Main Menu")
         ch = prompt("Choose")
         if   ch == "1": hacking_ai()
+        elif ch == "2": claude_code_ai()
         elif ch == "0": return
         else: time.sleep(0.5)
+
+def claude_code_ai():
+    print(B + "\n[+] Claude Code ⮞ Anthropic AI via Terminal" + W)
+    print(Y + "    Type 'exit' or press Ctrl+C to return to menu\n" + W)
+    try:
+        result = subprocess.run(["claude", "--version"],
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
+        if result.returncode != 0:
+            raise FileNotFoundError
+        subprocess.run(["claude"])
+    except FileNotFoundError:
+        print(R + "\n[!] 'claude' (Claude Code) is not installed." + W)
+        print(Y + """
+    Install steps:
+      # Requires Node.js 18+
+      npm install -g @anthropic-ai/claude-code
+
+    Then authenticate:
+      claude
+        """ + W)
+    separator()
  
 # Main Menu
 def main_menu():
